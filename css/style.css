@@ -1,0 +1,120 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 72px;
+}
+h1 + p {
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 36px;
+}
+a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 200px;
+}
+.grid {
+    display: grid;
+}
+.grid-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    
+}
+.grid-item-main {
+    background-image: url(../img/bg-main.png);
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-red {
+    background-image: url(../img/bg-red.png);
+    grid-area: a;
+}
+.grid-item-lgray {
+    background-color: #f3f1ef;
+    grid-area: b;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+.grid-item-pic1 {
+    background-image: url(../img/bg-one.png);
+    grid-area: c;
+}
+.grid-item-pic2 {
+    background-image: url(../img/bg-two.png);
+    grid-area: d;
+}
+.grid-item-pic3 {
+    background-image: url(../img/bg-three.png);
+    grid-area: e;
+}
+.grid-item-pic4 {
+    background-image: url(../img/bg-four.png);
+    grid-area: f;
+}
+.grid-item-blue-text {
+    display: flex;
+    justify-content: center;
+    grid-area: g;
+}
+.grid-item-pic5 {
+    background-image: url(../img/bg-five.png);
+    grid-area: h;
+}
+.grid-item-bluebg {
+    grid-area: i;
+}
+.grid-item-blue {
+    background-color: #3f729b;
+    color: #fff;
+    padding-left: 100px;
+}
+.grid-item-green {
+    background-color: #2ebd59;
+    color: #fff;
+    grid-area: k;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+.grid-item-gray {
+    background-color: #282b2f;
+    color: #fff;
+    grid-area: l;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(6, 550px);
+    grid-template-columns: 1fr repeat(10, 1fr) 1fr;
+    grid-template-areas:
+    "header header header header header header header header header header header header"
+    "header header header header header header header header header header header header"
+    "a a a a a a b b b b b b"
+    "c c c d d d e e e f f f"
+    "g g g g g g h h h i i i"
+    "k k k k k k l l l l l l" ;
+}
